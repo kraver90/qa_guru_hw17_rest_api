@@ -45,9 +45,7 @@ public class ReqresInTest {
                 .post("api/users")
                 .then()
                 .statusCode(201)
-                .body("name", is("morpheus"),
-                        "job", is("leader"),
-                        "id", notNullValue());
+                .body("name", is("morpheus"), "job", is("leader"), "id", notNullValue());
     }
 
     @Test
